@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Maecenas";
+  src: url("../public/font/maecenastest-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bg-gradient-kylin {
+  background: linear-gradient(90deg, #00e4a1, #5eead4);
+}
+.maecenastest-font {
+  font-family: "Maecenas";
+}
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-updown {
+  animation: updown 2s ease-in-out infinite;
 }
+
+@keyframes downup {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+@keyframes slideFadeInRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slidefadein {
+  animation: slideFadeInRight 0.8s ease-out forwards;
+}
+
+.animate-downup {
+  animation: downup 2s ease-in-out infinite;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.9;
+  background-image: radial-gradient(white 0.5px, black 0.5px);
+  background-size: 15px 10px;
+  z-index: -20; /* Send it to the back */
+  transform: rotate(36deg);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-30px) translateX(20px);
+  }
+}
+
+/* This can be added to your globals.css file or wherever you manage your global styles */
