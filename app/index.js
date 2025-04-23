@@ -88,7 +88,7 @@ export default function Home() {
               A unified ecosystem built to power the next generation of digital
               experiences.
             </p>
-            <button className="bg-gradient-kylin text-black border-0 py-4 px-8 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg opacity-0 animate-fade-in-delay-2">
+            <button className="bg-gradient-kylin text-black border-0 py-4 px-8 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg opacity-0 animate-fade-in-delay-2">
               Explore Ecosystem
             </button>
           </div>

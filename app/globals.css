@@ -7,12 +7,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "DancingScript";
+  src: url("../public/font/DancingScript-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro";
+  src: url("../public/font/CrimsonPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .bg-gradient-kylin {
   background: linear-gradient(90deg, #00e4a1, #5eead4);
 }
+
 .maecenastest-font {
   font-family: "Maecenas";
 }
+
+.dancing-font {
+  font-family: "DancingScript";
+}
+
+.crimson-font {
+  font-family: "CrimsonPro";
+}
+
 .montserrat-font {
   font-family: "Montserrat", sans-serif;
 }
