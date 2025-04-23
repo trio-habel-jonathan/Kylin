@@ -65,11 +65,11 @@ const HeroSection = () => {
       const particlesContainer = particlesContainerRef.current;
       if (!particlesContainer) return;
 
-      const particleCount = 50;
+      const particleCount = 200;
 
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement("div");
-        particle.className = "absolute rounded-full bg-white bg-opacity-50";
+        particle.className = "absolute rounded-full bg-black dark:bg-white bg-opacity-50";
 
         // Random position
         const posX = Math.random() * 100;
@@ -115,9 +115,7 @@ const HeroSection = () => {
     <section className="relative h-screen w-full flex items-center pl-8 md:pl-20 overflow-hidden">
       <div className="absolute -top-24 right-0 w-[500px] h-[500px] rounded-full bg-[#00e4a1]/50 bg-opacity-60 blur-[80px] animate-float"></div>
 
-      <div className="absolute -bottom-36 -left-24 w-[400px] h-[400px] rounded-full bg-[#00e4a1]/50 bg-opacity-60 blur-[80px] animate-float-reverse"></div>
-
-      <div className="absolute top-48 right-72 w-[450px] h-[450px] rounded-full bg-[#5eead4]/50 bg-opacity-60 blur-[80px] animate-float-delay"></div>
+      <div className="absolute top-48 right-72 w-[360px] h-[360px] rounded-full bg-[#5eead4]/50 bg-opacity-60 blur-[80px] animate-float-delay"></div>
 
       <div
         id="particles"
@@ -125,10 +123,10 @@ const HeroSection = () => {
         className="absolute top-0 left-0 w-full h-full z-0"
       ></div>
       <div className="block lg:hidden bg-gradient-to-t from-black/75 via-black/50 to-black/75 absolute top-0 left-0 w-full h-full z-30"></div>
-      <div className="relative z-30 w-full lg:w-1/2 max-w-7xl">
+      <div className="relative z-30 w-full md:w-1/2 max-w-7xl">
         <h1
           ref={headingRef}
-          className="bebas-neue-regular text-[80px] md:text-[130px] lg:text-[200px] leading-[0.9] tracking-[-2px] mb-8"
+          className="bebas-neue-regular text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-[-2px] mb-8"
         >
           It Starts with Kylin
         </h1>
@@ -141,15 +139,15 @@ const HeroSection = () => {
         </p>
         <button
           ref={buttonRef}
-          className="bg-gradient-kylin text-black border-0 py-4 px-8 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+          className="bg-gradient-kylin text-black border-0 py-4 px-8 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-kylin-primary/30 hover:scale-105 relative overflow-hidden group"
         >
-          Explore Ecosystem
+          <span className="relative z-10">Explore Ecosystem</span>
+          <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
         </button>
       </div>
-
       <img
         src="./image/tiketta.png"
-        className="h-full object-cover absolute top-0 -right-72 z-20"
+        className="h-full object-cover absolute top-0 -right-64 z-20"
         alt="Kylin logo"
       />
       <img
