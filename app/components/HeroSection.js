@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
@@ -112,7 +114,7 @@ const HeroSection = () => {
   }, []); // Empty dependency array means this runs once on mount
 
   return (
-    <section className="relative h-screen w-full flex items-center pl-8 md:pl-20 overflow-hidden">
+    <section className="relative h-screen w-full flex items-center pl-8 md:pl-20 overflow-hidden z-10">
       <div className="absolute -top-24 right-0 w-[500px] h-[500px] rounded-full bg-[#00e4a1]/50 bg-opacity-60 blur-[80px] animate-float"></div>
 
       <div className="absolute top-48 right-72 w-[360px] h-[360px] rounded-full bg-[#5eead4]/50 bg-opacity-60 blur-[80px] animate-float-delay"></div>
@@ -122,7 +124,7 @@ const HeroSection = () => {
         ref={particlesContainerRef}
         className="absolute top-0 left-0 w-full h-full z-0"
       ></div>
-      <div className="block lg:hidden bg-gradient-to-t from-black/75 via-black/50 to-black/75 absolute top-0 left-0 w-full h-full z-30"></div>
+      <div className="block lg:hidden bg-gradient-to-t backdrop-blur-xs from-white/25 dark:from-black/75 via-white/0 dark:via-black/50 to-white/25 dark:to-black/75 absolute top-0 left-0 w-full h-full z-30"></div>
       <div className="relative z-30 w-full md:w-1/2 max-w-7xl">
         <h1
           ref={headingRef}
@@ -139,7 +141,7 @@ const HeroSection = () => {
         </p>
         <button
           ref={buttonRef}
-          className="bg-gradient-kylin text-black border-0 py-4 px-8 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-kylin-primary/30 hover:scale-105 relative overflow-hidden group"
+          className="bg-gradient-kylin z-10 text-black border-0 py-4 px-8 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-kylin-primary/30 hover:scale-105 relative overflow-hidden group"
         >
           <span className="relative z-10">Explore Ecosystem</span>
           <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>

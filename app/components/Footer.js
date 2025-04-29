@@ -1,5 +1,6 @@
 // components/Footer.jsx
-import { useState, useEffect } from "react";
+"use client";
+
 import Link from "next/link";
 
 const Footer = () => {
