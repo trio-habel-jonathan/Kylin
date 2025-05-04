@@ -6,8 +6,7 @@ export default function AboutUs() {
   return (
     <>
       <Navbar />
-
-      <Footer />
+      <Footer/>
     </>
   );
 }
