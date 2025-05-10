@@ -38,9 +38,9 @@ export default function Home() {
                 <path
                   d="M4 12H20M20 12L14 6M20 12L14 18"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </span>

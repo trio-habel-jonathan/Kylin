@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -77,13 +78,13 @@ export default function Navbar() {
           <ul className="flex items-center gap-6 text-base montserrat-font font-medium">
             {urlNavbar.map((item, index) => (
               <li key={index} className="relative group">
-                <a
+                <Link
                   href={item.url}
                   className="py-1 text-gray-800 dark:text-white opacity-80 hover:opacity-100 transition-opacity duration-200"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-500 dark:bg-teal-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
