@@ -114,3 +114,15 @@
 }
 
 /* This can be added to your globals.css file or wherever you manage your global styles */
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #14b8a6;
+  border-radius: 4px;
+}
