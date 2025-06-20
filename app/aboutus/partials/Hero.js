@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export default function Hero() {
 
   return (
-    <div className="relative h-[30rem] w-full bg-black overflow-hidden flex flex-col items-center justify-center py-10">
+    <div className="relative h-[34rem] w-full bg-slate-50 dark:bg-black text-black dark:text-white overflow-hidden flex flex-col items-center justify-center py-10">
       {/* Background glow effect */}
       <motion.div 
         className="absolute w-full h-full opacity-30"
@@ -18,7 +18,7 @@ export default function Hero() {
         <motion.div 
           className="absolute rounded-full w-[22rem] h-[22rem] bg-teal-400 blur-3xl"
           style={{ 
-            top: '2%', 
+            top: '1%', 
             left: '30%',
           }}
           animate={{
@@ -33,7 +33,7 @@ export default function Hero() {
         <motion.div 
           className="absolute rounded-full w-64 h-64 bg-teal-500 blur-3xl"
           style={{ 
-            bottom: '15%', 
+            bottom: '20%', 
             right: '20%',
           }}
           animate={{
@@ -55,7 +55,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <motion.h1 
-          className="bebas-neue-regular text-6xl md:text-7xl lg:text-8xl text-white mb-6"
+          className="bebas-neue-regular text-6xl md:text-7xl lg:text-8xl  mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -71,7 +71,7 @@ export default function Hero() {
         />
         
         <motion.p 
-          className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto"
+          className="text-black dark:text-gray-300 text-lg md:text-xl max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}

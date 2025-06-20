@@ -7,27 +7,24 @@ import { motion } from "framer-motion";
 const teamMembers = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "CEO & Founder",
+    name: "Trio Habel Jonathan",
+    role: "CEO & Founder Kylin",
     bio: "Former tech executive with 15+ years experience in the industry.",
-    image:
-      "https://i.pinimg.com/736x/2f/57/8d/2f578d07945132849b05fbdaf78cba38.jpg",
+    image: "./image/Habib.jpg",
   },
   {
     id: 2,
-    name: "Michael Chang",
-    role: "CTO",
+    name: "M Habib Abdillah",
+    role: "CTO / Backend Dev",
     bio: "Software architect with a passion for innovative solutions.",
-    image:
-      "https://i.pinimg.com/736x/2f/57/8d/2f578d07945132849b05fbdaf78cba38.jpg",
+    image: "./image/Habib.jpg",
   },
   {
     id: 3,
-    name: "Aisha Patel",
-    role: "Design Lead",
+    name: "Franklin Sebastian Felix",
+    role: "Design Lead / Frontend Dev",
     bio: "Award-winning designer focused on creating delightful user experiences.",
-    image:
-      "https://i.pinimg.com/736x/2f/57/8d/2f578d07945132849b05fbdaf78cba38.jpg",
+    image: "./image/Franklin.jpg",
   },
 ];
 
@@ -114,7 +111,7 @@ export default function TeamPage() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full aspect-square rounded-md object-cover "
+                    className="w-full aspect-square rounded-md object-cover"
                   />
                 </motion.div>
               ))}
