@@ -46,6 +46,10 @@ export default function Navbar() {
       url: "/aboutus",
     },
     {
+      name: "Products",
+      url: "/products",
+    },
+    {
       name: "Contact",
       url: "/contactus",
     },

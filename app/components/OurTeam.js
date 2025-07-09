@@ -26,6 +26,13 @@ const teamMembers = [
     bio: "Award-winning designer focused on creating delightful user experiences.",
     image: "./image/Franklin.jpg",
   },
+  {
+    id: 4,
+    name: "Franklin Sebastian Felix",
+    role: "Design Lead / Frontend Dev",
+    bio: "Award-winning designer focused on creating delightful user experiences.",
+    image: "./image/Franklin.jpg",
+  },
 ];
 
 // Animation variants
@@ -75,7 +82,7 @@ export default function TeamPage() {
   };
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? "dark" : ""}`}>
+    <div className={` ${isDarkMode ? "dark" : ""}`}>
       <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
         <main className="py-12 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
           <section className="mb-16">
@@ -96,7 +103,7 @@ export default function TeamPage() {
             </div>
 
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
