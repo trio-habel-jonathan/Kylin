@@ -85,7 +85,7 @@ export default function AboutUs() {
           </div>
 
           {/* Main Statistics */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {statistics.map((stat, index) => (
               <div
                 key={index}
@@ -128,15 +128,6 @@ export default function AboutUs() {
                 </p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-full shadow-lg">
-              <TrendingUp className="w-5 h-5" />
-              <span className="montserrat-font font-medium">
-                Web3 is growing at a 49.3% CAGR while Web2 remains dominant
-              </span>
-            </div>
           </div>
         </div>
       </div>

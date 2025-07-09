@@ -48,7 +48,7 @@ const web3EducationPoints = [
 export default function Ourprojects() {
   return (
     <section className="bg-slate-50 dark:bg-black w-full">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto sm:px-5 lg:px-3">
         {/* Web2 Projects */}
         <div className="mb-20">
           <div className="flex items-center justify-between mb-6">
