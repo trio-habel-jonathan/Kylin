@@ -74,7 +74,7 @@ export default function Ourprojects() {
             {web2Projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gray-900 dark:bg-gray-800 rounded-xl flex gap-4 p-5 shadow-lg transition-transform duration-300 ease-in-out hover:shadow-cyan-500/30 cursor-pointer"
+                className="bg-white dark:bg-gray-900 rounded-xl flex gap-4 p-5 shadow-lg transition-transform duration-300 ease-in-out hover:shadow-cyan-500/30 cursor-pointer"
               >
                 <div className="flex-shrink-0 mt-1">{project.logo}</div>
 
@@ -83,7 +83,9 @@ export default function Ourprojects() {
                     {project.title}
                   </h4>
 
-                  <p className="text-sm text-gray-400 mb-3">{project.desc}</p>
+                  <p className="text-sm text-black dark:text-gray-400 mb-3">
+                    {project.desc}
+                  </p>
 
                   <div className="flex justify-end mt-auto">
                     <button
@@ -133,7 +135,7 @@ export default function Ourprojects() {
                       <h3 className="montserrat-font text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-teal-600 transition-colors duration-300">
                         {point.title}
                       </h3>
-                      <p className="montserrat-font text-sm lg:text-base tracking-wide text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <p className="montserrat-font text-sm lg:text-base tracking-wide dark:text-gray-600 text-black leading-relaxed">
                         {point.description}
                       </p>
                     </div>
@@ -174,7 +176,7 @@ export default function Ourprojects() {
             {web3Projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gray-900 dark:bg-gray-800 rounded-xl flex gap-4 p-5 shadow-lg transition-transform duration-300 ease-in-out hover:shadow-cyan-500/30 cursor-pointer"
+                className="bg-white dark:bg-gray-900 rounded-xl flex gap-4 p-5 shadow-lg transition-transform duration-300 ease-in-out hover:shadow-cyan-500/30 cursor-pointer"
               >
                 <div className="flex-shrink-0 mt-1">{project.logo}</div>
 
@@ -183,7 +185,9 @@ export default function Ourprojects() {
                     {project.title}
                   </h4>
 
-                  <p className="text-sm text-gray-400 mb-3">{project.desc}</p>
+                  <p className="text-sm text-black dark:text-gray-400 mb-3">
+                    {project.desc}
+                  </p>
 
                   <div className="flex justify-end mt-auto">
                     <button
@@ -216,7 +220,7 @@ export default function Ourprojects() {
                       <h3 className="montserrat-font text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-teal-600 transition-colors duration-300">
                         {point.title}
                       </h3>
-                      <p className="montserrat-font text-sm lg:text-base tracking-wide text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <p className="montserrat-font text-sm lg:text-base tracking-wide dark:text-gray-600 text-black leading-relaxed">
                         {point.description}
                       </p>
                     </div>
