@@ -47,10 +47,10 @@ const web3EducationPoints = [
 
 export default function Ourprojects() {
   return (
-    <section className="bg-slate-50 dark:bg-black w-full">
-      <div className="max-w-6xl mx-auto sm:px-5 lg:px-3">
+    <section className="bg-slate-50 dark:bg-black w-full ">
+      <div className="max-w-6xl mx-auto ">
         {/* Web2 Projects */}
-        <div className="mb-20">
+        <div className="mb-20 px-6 lg:px-0">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 text-cyan-400">
@@ -102,7 +102,7 @@ export default function Ourprojects() {
           </div>
         </div>
 
-        <div className="bg-slate-50 dark:bg-black  flex gap-8 items-start justify-between my-30 flex-wrap ">
+        <div className="bg-slate-50 dark:bg-black  flex gap-8 items-start justify-between my-30 flex-wrap px-6 lg:px-0">
           <div className="flex-[300px] ">
             <div className="flex items-center gap-4 mb-8">
               <h1 className="bebas-neue-regular text-teal-400 text-5xl lg:text-5xl font-bold">
@@ -120,8 +120,8 @@ export default function Ourprojects() {
             </div>
           </div>
 
-          <div className="flex-[400px] min-w-[350px] space-y-6">
-            <div className="space-y-6">
+          <div className="flex-[400px] md:min-w-[350px] space-y-6">
+            <div className="space-y-6 6 ">
               {educationPoints.map((point, index) => (
                 <div
                   key={index}
@@ -152,7 +152,7 @@ export default function Ourprojects() {
         </div>
 
         {/* Web3 Projects */}
-        <div>
+        <div className="px-6 lg:px-0">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 text-cyan-400">
@@ -204,9 +204,9 @@ export default function Ourprojects() {
           </div>
         </div>
 
-        <div className="bg-slate-50 dark:bg-black flex gap-8 items-start justify-between my-30 flex-wrap-reverse">
-          <div className="flex-[400px] min-w-[350px] space-y-6">
-            <div className="space-y-6">
+        <div className="bg-slate-50 dark:bg-black flex gap-8 items-start justify-between my-30 flex-wrap-reverse px-6 lg:px-0">
+          <div className="flex-[400px] md:min-w-[350px] space-y-6 ">
+            <div className="space-y-6 ">
               {web3EducationPoints.map((point, index) => (
                 <div
                   key={index}
